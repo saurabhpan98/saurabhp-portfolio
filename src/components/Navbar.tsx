@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import { ThemeToggle } from './ThemeToggle';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function Navbar() {
           animate={{ opacity: 1, x: 0 }}
           className="text-xl sm:text-2xl font-display font-black tracking-tighter uppercase group"
         >
-          SAURABH <span className="text-primary group-hover:text-white transition-colors duration-500">PANCHAL</span>
+          SAURABH <span className="text-primary group-hover:text-foreground transition-colors duration-500">PANCHAL</span>
         </motion.a>
 
         {/* Desktop Nav */}
@@ -49,18 +50,24 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary group-hover:w-full transition-all duration-300" />
             </motion.a>
           ))}
-          <Button variant="outline" size="sm" className="rounded-full border-primary/30 font-display font-bold text-[10px] uppercase tracking-widest h-10 px-6 hover:bg-primary hover:text-primary-foreground transition-all duration-500" asChild>
-            <a href="https://github.com/saurabhpan98" target="_blank" rel="noreferrer">
-              <Github className="w-4 h-4 mr-2" />
-              GitHub
-            </a>
-          </Button>
+          <div className="flex items-center gap-4">
+            <ThemeToggle />
+            <Button variant="outline" size="sm" className="rounded-full border-primary/30 font-display font-bold text-[10px] uppercase tracking-widest h-10 px-6 hover:bg-primary hover:text-primary-foreground transition-all duration-500" asChild>
+              <a href="https://github.com/saurabhpan98" target="_blank" rel="noreferrer">
+                <Github className="w-4 h-4 mr-2" />
+                GitHub
+              </a>
+            </Button>
+          </div>
         </div>
 
-        {/* Mobile Toggle */}
-        <button className="md:hidden text-primary p-2 hover:bg-primary/10 rounded-full transition-colors" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        {/* Mobile Actions */}
+        <div className="md:hidden flex items-center gap-4">
+          <ThemeToggle />
+          <button className="text-primary p-2 hover:bg-primary/10 rounded-full transition-colors" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}

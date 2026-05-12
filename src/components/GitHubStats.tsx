@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Github, Star, GitFork, BookOpen, Activity } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useTheme } from './ThemeContext';
 
 interface GitHubRepo {
   id: number;
@@ -26,6 +27,7 @@ export default function GitHubStats({ username }: { username: string }) {
   const [repos, setRepos] = useState<GitHubRepo[]>([]);
   const [user, setUser] = useState<GitHubUser | null>(null);
   const [loading, setLoading] = useState(true);
+  const { theme: currentTheme } = useTheme();
 
   useEffect(() => {
     async function fetchData() {
@@ -87,12 +89,13 @@ export default function GitHubStats({ username }: { username: string }) {
             <div className="min-w-[800px] flex justify-center">
               <GitHubCalendar 
                 username={username} 
-                colorScheme="dark"
+                colorScheme={currentTheme}
                 fontSize={12}
                 blockSize={10}
                 blockMargin={4}
                 theme={{
                   dark: ['#1e1b4b', '#312e81', '#4338ca', '#6366f1', '#a5b4fc'],
+                  light: ['#f3f4f6', '#d1d5db', '#9ca3af', '#6b7280', '#374151']
                 }}
               />
             </div>

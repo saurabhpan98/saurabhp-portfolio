@@ -42,6 +42,29 @@
 }
 
 :root {
+  --background: 0 0% 100%;
+  --foreground: 260 40% 4%;
+  --card: 0 0% 98%;
+  --card-foreground: 260 40% 4%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 260 40% 4%;
+  --primary: 263 70% 50%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 263 10% 96%;
+  --secondary-foreground: 263 40% 20%;
+  --muted: 263 10% 94%;
+  --muted-foreground: 263 10% 40%;
+  --accent: 263 60% 90%;
+  --accent-foreground: 263 60% 40%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 260 10% 90%;
+  --input: 260 10% 90%;
+  --ring: 263 70% 50%;
+  --radius: 1rem;
+}
+
+.dark {
   --background: 260 40% 4%;
   --foreground: 210 40% 98%;
   --card: 260 40% 5%;
@@ -61,7 +84,6 @@
   --border: 260 40% 15%;
   --input: 260 40% 15%;
   --ring: 263 90% 65%;
-  --radius: 1rem;
 }
 
 @layer base {
@@ -70,17 +92,20 @@
   }
   body {
     @apply bg-background text-foreground font-sans antialiased overflow-x-hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .dark body {
     background: radial-gradient(circle at 50% 0%, hsl(263, 60%, 15%) 0%, hsl(260, 40%, 4%) 70%);
     background-attachment: fixed;
   }
 }
 
 .glass {
-  @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] shadow-2xl;
+  @apply bg-white/[0.03] dark:bg-white/[0.03] backdrop-blur-xl border border-black/[0.05] dark:border-white/[0.08] shadow-2xl;
 }
 
 .glass-card {
-  @apply bg-white/[0.02] backdrop-blur-md border border-white/[0.05] transition-all duration-300 shadow-2xl shadow-black/40 hover:shadow-primary/20 hover:bg-white/[0.06] active:bg-white/[0.1] hover:border-primary/40 active:scale-[0.99];
+  @apply bg-black/[0.02] dark:bg-white/[0.02] backdrop-blur-md border border-black/[0.05] dark:border-white/[0.05] transition-all duration-300 shadow-2xl shadow-black/10 dark:shadow-black/40 hover:shadow-primary/20 hover:bg-black/[0.04] dark:hover:bg-white/[0.06] active:bg-black/[0.08] dark:active:bg-white/[0.1] hover:border-primary/40 active:scale-[0.99];
 }
 
 .glass-morphism {

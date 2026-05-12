@@ -93,7 +93,7 @@ export default function App() {
                 </h2>
                 <div className="space-y-6 text-base sm:text-lg text-muted-foreground font-normal leading-relaxed tracking-wide max-w-xl">
                   <p>
-                    I am a Computer Engineering graduate from <span className="text-white font-medium border-b border-primary/30 pb-0.5">Delhi Technological University</span>, 
+                    I am a Computer Engineering graduate from <span className="text-foreground font-medium border-b border-primary/30 pb-0.5">Delhi Technological University</span>, 
                     architecting high-performance digital experiences.
                   </p>
                   <p>
@@ -102,7 +102,7 @@ export default function App() {
                   </p>
                 </div>
                 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-16 pt-12 border-t border-white/10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-16 pt-12 border-t border-border/50">
                   <div className="group">
                     <h4 className="text-[10px] font-mono text-primary/60 uppercase tracking-[0.4em] mb-3">Geolocation.node</h4>
                     <p className="text-xl font-display font-semibold uppercase tracking-tight">New Delhi, India</p>
@@ -186,7 +186,7 @@ export default function App() {
           {/* Projects Section */}
           <section id="projects" className="section-padding bg-background relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(56,189,248,0.03),transparent_40%)]" />
-            <div className="max-w-7xl mx-auto mb-24 flex flex-col md:flex-row justify-between items-end gap-12 relative z-10">
+            <div className="max-w-7xl mx-auto mb-24 flex flex-col md:flex-row justify-between md:items-end gap-12 relative z-10">
               <div className="max-w-2xl">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-8 h-px bg-primary" />
@@ -194,7 +194,7 @@ export default function App() {
                 </div>
                 <h2 className="text-4xl md:text-6xl font-display font-bold tracking-tighter uppercase leading-none">FEATURED <br /> OUTPUT</h2>
               </div>
-              <Button variant="outline" className="rounded-none border-white/10 font-mono text-[10px] tracking-widest uppercase hover:bg-white/5 h-12 px-8" asChild>
+              <Button variant="outline" className="rounded-none border-foreground/10 font-mono text-[10px] tracking-widest uppercase hover:bg-foreground/5 h-12 px-8" asChild>
                 <a href="https://github.com/saurabhpan98" target="_blank" rel="noreferrer">
                   Terminal.GitHub() <ChevronRight className="ml-2 w-4 h-4" />
                 </a>
@@ -221,14 +221,14 @@ export default function App() {
                       <Button size="icon" className="rounded-none w-14 h-14 bg-primary hover:scale-110 transition-transform" asChild>
                         <a href={project.github} target="_blank" rel="noreferrer"><Github className="w-5 h-5 text-primary-foreground" /></a>
                       </Button>
-                      <Button size="icon" variant="outline" className="rounded-none w-14 h-14 border-white/20 bg-black/40 hover:bg-black/60 hover:scale-110 transition-transform">
-                        <ExternalLink className="w-5 h-5 text-white" />
+                      <Button size="icon" variant="outline" className="rounded-none w-14 h-14 border-foreground/20 bg-muted/40 hover:bg-muted/60 hover:scale-110 transition-transform">
+                        <ExternalLink className="w-5 h-5 text-foreground" />
                       </Button>
                     </div>
                   </div>
                   <div className="flex items-center gap-4 mb-4">
                     <span className="font-mono text-[10px] text-primary tracking-[0.2em] uppercase">{project.tags[0] || 'Module'}</span>
-                    <div className="flex-1 h-px bg-white/10" />
+                    <div className="flex-1 h-px bg-border/50" />
                   </div>
                   <h3 className="text-3xl font-display font-bold mb-4 tracking-tighter uppercase group-hover:text-primary transition-colors">{project.title}</h3>
                   <p className="text-muted-foreground mb-8 font-light text-sm leading-relaxed tracking-wide max-w-lg">{project.description}</p>
@@ -259,7 +259,7 @@ export default function App() {
           </section>
 
           {/* Experience Section */}
-          <section id="experience" className="section-padding bg-slate-950/20 relative">
+          <section id="experience" className="section-padding bg-muted/20 relative">
             <div className="absolute left-0 top-0 w-px h-full bg-gradient-to-b from-transparent via-primary/10 to-transparent" />
             <div className="max-w-7xl mx-auto">
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
@@ -303,7 +303,7 @@ export default function App() {
                           <h3 className="text-2xl sm:text-3xl font-display font-extrabold uppercase tracking-tight mb-1">{exp.role}</h3>
                           <p className="text-primary font-mono text-xs sm:text-sm uppercase tracking-[0.2em] font-semibold">{exp.company}</p>
                         </div>
-                        <span className="font-mono text-[10px] text-muted-foreground bg-white/5 py-1.5 px-4 rounded-full border border-white/5 uppercase tracking-widest self-start sm:self-center">
+                        <span className="font-mono text-[10px] text-muted-foreground bg-muted/50 py-1.5 px-4 rounded-full border border-border uppercase tracking-widest self-start sm:self-center">
                           {exp.period}
                         </span>
                       </div>
@@ -349,7 +349,7 @@ export default function App() {
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.1, type: "spring", stiffness: 300 }}
                   >
-                    <Card className="glass-card h-full p-8 sm:p-12 rounded-3xl group border border-white/5 hover:border-primary/40 transition-all duration-700 relative overflow-hidden flex flex-col items-start min-h-[300px] shadow-2xl shadow-black/40 bg-white/[0.02] backdrop-blur-xl">
+                    <Card className="glass-card h-full p-8 sm:p-12 rounded-3xl group border-none relative overflow-hidden flex flex-col items-start min-h-[300px]">
                       <div className="absolute top-0 right-0 p-8 opacity-[0.05] group-hover:opacity-[0.1] group-hover:scale-125 transition-all duration-700">
                         <GraduationCap className="w-40 h-40" />
                       </div>
@@ -360,7 +360,7 @@ export default function App() {
                         <h3 className="text-2xl sm:text-3xl font-display font-black uppercase tracking-tight group-hover:text-primary transition-colors leading-none">{edu.institution}</h3>
                       </div>
                       <p className="font-mono text-[11px] text-primary uppercase tracking-[0.3em] mb-4 font-bold">{edu.period}</p>
-                      <p className="text-xl font-display mb-6 text-white uppercase tracking-tight font-bold">{edu.degree}</p>
+                      <p className="text-xl font-display mb-6 text-foreground uppercase tracking-tight font-bold">{edu.degree}</p>
                       <p className="text-muted-foreground text-sm sm:text-base font-normal leading-relaxed tracking-wide flex-grow">{edu.details}</p>
                       <div className="w-full h-px bg-gradient-to-r from-primary/30 to-transparent mt-10" />
                     </Card>
@@ -373,9 +373,9 @@ export default function App() {
           {/* Achievements Section */}
           <section id="achievements" className="section-padding bg-muted/20 relative">
             <div className="max-w-7xl mx-auto">
-              <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-12 text-center md:text-left">
-                <div className="max-w-2xl mx-auto md:mx-0">
-                  <div className="flex items-center justify-center md:justify-start gap-3 mb-6">
+              <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-12 text-left">
+                <div className="max-w-2xl">
+                  <div className="flex items-center justify-start gap-3 mb-6">
                     <div className="w-8 h-px bg-primary" />
                     <span className="text-xs font-mono uppercase tracking-[0.3em] text-primary">Honor // Index</span>
                   </div>
@@ -396,7 +396,7 @@ export default function App() {
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.1, type: "spring", stiffness: 300 }}
                   >
-                    <Card className="glass-card h-full p-10 rounded-3xl group border border-white/5 hover:border-primary/40 transition-all duration-500 shadow-xl shadow-black/20 relative overflow-hidden bg-white/[0.02] backdrop-blur-xl">
+                    <Card className="glass-card h-full p-10 rounded-3xl group border-none relative overflow-hidden transition-all duration-500">
                       <div className="absolute -bottom-10 -right-10 p-4 opacity-[0.03] group-hover:opacity-[0.08] group-hover:scale-150 transition-all duration-1000">
                         <Award className="w-40 h-40 text-primary" />
                       </div>
@@ -416,7 +416,7 @@ export default function App() {
           </section>
 
           {/* Skills Section */}
-          <section id="skills" className="section-padding bg-slate-950/40 relative overflow-hidden">
+          <section id="skills" className="section-padding bg-muted/20 relative overflow-hidden">
             <div className="absolute right-0 top-0 w-1/2 h-full bg-[radial-gradient(circle_at_70%_50%,rgba(56,189,248,0.05),transparent_50%)]" />
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 relative z-10">
               <div>
@@ -431,13 +431,13 @@ export default function App() {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   {['TypeScript', 'React', 'Node.js', 'Next.js', 'PostgreSQL', 'Docker', 'AWS', 'Redis', 'Tailwind', 'Git', 'D3.js', 'Python'].map((skill, i) => (
-                    <Badge key={`${skill}-${i}`} className="px-6 py-3 text-[10px] font-mono rounded-none uppercase tracking-[0.2em] glass-card border-white/5 bg-white/5 text-primary hover:bg-primary hover:text-primary-foreground transition-all cursor-default">
+                    <Badge key={`${skill}-${i}`} className="px-6 py-3 text-[10px] font-mono rounded-none uppercase tracking-[0.2em] glass-card border-border bg-muted/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all cursor-default">
                       {skill}
                     </Badge>
                   ))}
                 </div>
               </div>
-              <div className="glass-card rounded-none p-12 border-white/5 bg-slate-950/50">
+              <div className="glass-card rounded-none p-12 border-border bg-muted/30">
                 <div className="space-y-12">
                   {[
                     { name: 'Core Infrastructure', level: 95, icon: Layers },
@@ -452,7 +452,7 @@ export default function App() {
                         </div>
                         <span className="font-mono text-[10px] text-primary">{item.level}%</span>
                       </div>
-                      <div className="h-px w-full bg-white/5 relative">
+                      <div className="h-px w-full bg-border relative">
                         <motion.div 
                           initial={{ width: 0 }}
                           whileInView={{ width: `${item.level}%` }}
@@ -469,7 +469,7 @@ export default function App() {
           </section>
 
           {/* Testimonials */}
-          <section className="section-padding bg-slate-950/40 relative overflow-hidden">
+          <section className="section-padding bg-muted/30 relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(139,92,246,0.05),transparent_60%)]" />
             <div className="max-w-7xl mx-auto relative z-10">
               <div className="flex flex-col items-center text-center mb-20">
@@ -490,7 +490,7 @@ export default function App() {
                       animate={{ opacity: 1, x: 0, scale: 1 }}
                       exit={{ opacity: 0, x: -100, scale: 0.9 }}
                       transition={{ type: "spring", stiffness: 200, damping: 25 }}
-                      className="glass-card p-10 sm:p-16 rounded-[2.5rem] border border-white/10 relative shadow-2xl shadow-black/40"
+                      className="glass-card p-10 sm:p-16 rounded-[2.5rem] border border-border relative shadow-2xl shadow-black/40"
                     >
                       <Quote className="absolute top-10 right-10 w-20 h-20 text-primary/5 -z-10" />
                       <div className="flex flex-col items-center text-center">
@@ -508,7 +508,7 @@ export default function App() {
                           </div>
                         </div>
                         
-                        <p className="text-xl sm:text-2xl italic font-light mb-12 leading-relaxed text-white/90 tracking-wide max-w-3xl">
+                        <p className="text-xl sm:text-2xl italic font-light mb-12 leading-relaxed text-foreground tracking-wide max-w-3xl">
                           "{TESTIMONIALS[activeTestimonial].content}"
                         </p>
                         
@@ -527,7 +527,7 @@ export default function App() {
                     variant="outline" 
                     size="icon" 
                     onClick={prevTestimonial}
-                    className="w-14 h-14 rounded-full border-white/10 bg-white/5 hover:bg-primary hover:text-primary-foreground transition-all group"
+                    className="w-14 h-14 rounded-full border-border bg-muted/50 hover:bg-primary hover:text-primary-foreground transition-all group"
                   >
                     <ChevronLeft className="w-6 h-6 group-hover:scale-110 transition-transform" />
                   </Button>
@@ -536,7 +536,7 @@ export default function App() {
                       <button
                         key={i}
                         onClick={() => setActiveTestimonial(i)}
-                        className={`h-1.5 transition-all duration-500 rounded-full ${activeTestimonial === i ? 'w-8 bg-primary shadow-[0_0_8px_rgba(139,92,246,0.5)]' : 'w-2 bg-white/20 hover:bg-white/40'}`}
+                        className={`h-1.5 transition-all duration-500 rounded-full ${activeTestimonial === i ? 'w-8 bg-primary shadow-[0_0_8px_rgba(139,92,246,0.5)]' : 'w-2 bg-foreground/20 hover:bg-foreground/40'}`}
                       />
                     ))}
                   </div>
@@ -544,7 +544,7 @@ export default function App() {
                     variant="outline" 
                     size="icon" 
                     onClick={nextTestimonial}
-                    className="w-14 h-14 rounded-full border-white/10 bg-white/5 hover:bg-primary hover:text-primary-foreground transition-all group"
+                    className="w-14 h-14 rounded-full border-border bg-muted/50 hover:bg-primary hover:text-primary-foreground transition-all group"
                   >
                     <ChevronRight className="w-6 h-6 group-hover:scale-110 transition-transform" />
                   </Button>
@@ -554,7 +554,7 @@ export default function App() {
           </section>
 
           {/* Blog Section */}
-          <section className="section-padding bg-slate-950/20 relative">
+          <section className="section-padding bg-muted/20 relative">
             <div className="max-w-7xl mx-auto">
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
                 <div>
@@ -572,10 +572,10 @@ export default function App() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {BLOG_POSTS.map((post, i) => (
                   <motion.div key={`${post.id}-${i}`} {...fadeInUp} transition={{ delay: i * 0.1 }}>
-                    <Card className="glass-card rounded-none hover:bg-slate-950/60 transition-all cursor-pointer p-10 group relative border-t-0 border-r-0 border-b-2 border-l-0 border-b-primary/20 hover:border-b-primary">
+                    <Card className="glass-card rounded-none hover:bg-muted/50 transition-all cursor-pointer p-10 group relative border-t-0 border-r-0 border-b-2 border-l-0 border-b-primary/20 hover:border-b-primary">
                       <div className="flex justify-between items-center mb-8 pr-1">
                         <span className="font-mono text-[10px] text-primary uppercase tracking-[0.3em]">{post.date}</span>
-                        <span className="font-mono text-[9px] text-muted-foreground uppercase tracking-widest bg-white/5 px-2 py-0.5">{post.readTime}</span>
+                        <span className="font-mono text-[9px] text-muted-foreground uppercase tracking-widest bg-muted/50 px-2 py-0.5">{post.readTime}</span>
                       </div>
                       <h3 className="text-2xl font-display font-bold mb-6 group-hover:text-primary transition-colors uppercase tracking-tight leading-snug">{post.title}</h3>
                       <p className="text-muted-foreground font-light mb-10 leading-relaxed tracking-wide text-sm">{post.excerpt}</p>
@@ -610,7 +610,7 @@ export default function App() {
                     { icon: MapPin, label: 'Geo.Location', value: 'New Delhi, India' },
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-8 group">
-                      <div className="w-14 h-14 bg-slate-900 border border-white/5 flex items-center justify-center group-hover:border-primary/50 group-hover:bg-primary/5 transition-all">
+                      <div className="w-14 h-14 bg-muted/50 border border-border flex items-center justify-center group-hover:border-primary/50 group-hover:bg-primary/5 transition-all">
                         <item.icon className="w-5 h-5 text-primary" />
                       </div>
                       <div>
@@ -622,21 +622,21 @@ export default function App() {
                 </div>
               </div>
 
-              <motion.div {...fadeInUp} className="glass-card rounded-none p-12 bg-slate-950/50 border-white/5">
+              <motion.div {...fadeInUp} className="glass-card rounded-none p-12 bg-muted/30 border-border">
                 <form className="space-y-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-3">
                       <Label htmlFor="name" className="font-mono text-[10px] uppercase tracking-widest text-primary">Identity.String</Label>
-                      <Input id="name" placeholder="Name" className="bg-slate-900 border-white/10 rounded-none h-12 px-5 font-mono text-sm focus:border-primary transition-colors" />
+                      <Input id="name" placeholder="Name" className="bg-muted/50 border-border rounded-none h-12 px-5 font-mono text-sm focus:border-primary transition-colors" />
                     </div>
                     <div className="space-y-3">
                       <Label htmlFor="email" className="font-mono text-[10px] uppercase tracking-widest text-primary">Email.Protocol</Label>
-                      <Input id="email" type="email" placeholder="Email" className="bg-slate-900 border-white/10 rounded-none h-12 px-5 font-mono text-sm focus:border-primary transition-colors" />
+                      <Input id="email" type="email" placeholder="Email" className="bg-muted/50 border-border rounded-none h-12 px-5 font-mono text-sm focus:border-primary transition-colors" />
                     </div>
                   </div>
                   <div className="space-y-3">
                     <Label htmlFor="message" className="font-mono text-[10px] uppercase tracking-widest text-primary">Payload.Content</Label>
-                    <Textarea id="message" placeholder="Initialize message body..." className="bg-slate-900 border-white/10 rounded-none min-h-[160px] p-5 font-mono text-sm focus:border-primary transition-colors" />
+                    <Textarea id="message" placeholder="Initialize message body..." className="bg-muted/50 border-border rounded-none min-h-[160px] p-5 font-mono text-sm focus:border-primary transition-colors" />
                   </div>
                   <Button size="lg" className="w-full h-14 rounded-none bg-primary text-primary-foreground font-mono text-[10px] uppercase tracking-[0.4em] hover:bg-primary/90 transition-all">
                     Execute.Send() <Send className="ml-4 w-4 h-4" />
@@ -647,7 +647,7 @@ export default function App() {
           </section>
         </main>
 
-        <footer className="py-20 px-6 border-t border-white/5 bg-slate-950/30">
+        <footer className="py-20 px-6 border-t border-border bg-muted/30">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
             <div className="space-y-4 text-center md:text-left">
               <h2 className="text-xl font-display font-bold tracking-tighter uppercase">SAURABH <span className="text-primary">PANCHAL</span></h2>
@@ -659,6 +659,7 @@ export default function App() {
               {[
                 { icon: Github, href: 'https://github.com/saurabhpan98' },
                 { icon: Linkedin, href: '#' },
+                { icon: Mail, href: 'mailto:srbhpanchal98@gmail.com' },
                 { icon: Terminal, href: '#' },
               ].map((item, i) => (
                 <a key={i} href={item.href} className="text-muted-foreground hover:text-primary transition-all hover:scale-110">

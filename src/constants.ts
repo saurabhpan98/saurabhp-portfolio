@@ -147,5 +147,17 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Tech Lead @ Prisma Solutions',
     content: 'Exceptional capability in integrating AI into production environments. A true asset to any high-stakes project.',
     avatar: 'https://i.pravatar.cc/150?u=michael'
+  },
+  {
+    name: 'Emily Watson',
+    role: 'CEO @ CreativePulse',
+    content: 'Saurabh translated our complex requirements into a seamless user experience. Highly recommended for full-stack projects.',
+    avatar: 'https://i.pravatar.cc/150?u=emily'
+  },
+  {
+    name: 'David Miller',
+    role: 'Senior Backend Engineer',
+    content: 'Very impressed with his clean code and knowledge of distributed systems. A great collaborator.',
+    avatar: 'https://i.pravatar.cc/150?u=david'
   }
 ];

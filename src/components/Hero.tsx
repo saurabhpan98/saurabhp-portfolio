@@ -34,9 +34,9 @@ export default function Hero() {
 
         <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-14 font-sans font-normal leading-relaxed tracking-wide px-4">
           Architecting resilient digital ecosystems with a focus on 
-          <span className="text-white font-semibold"> High-Availability</span> 
+          <span className="text-foreground font-semibold"> High-Availability</span> 
           and 
-          <span className="text-white font-semibold"> Intelligent Agents</span>.
+          <span className="text-foreground font-semibold"> Intelligent Agents</span>.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -48,7 +48,7 @@ export default function Hero() {
             View.Projects()
             <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button variant="outline" size="lg" className="w-full sm:w-auto rounded-full border-white/10 px-10 h-16 text-sm font-display font-bold tracking-wider uppercase backdrop-blur-md hover:bg-white/[0.05] transition-all">
+          <Button variant="outline" size="lg" className="w-full sm:w-auto rounded-full border-foreground/10 px-10 h-16 text-sm font-display font-bold tracking-wider uppercase backdrop-blur-md hover:bg-foreground/[0.05] transition-all">
             <FileText className="mr-3 w-5 h-5" />
             Resume.pdf
           </Button>
