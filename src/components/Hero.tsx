@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 sm:px-12 overflow-hidden py-32 md:py-0">
+    <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 sm:px-12 overflow-hidden pt-32 pb-20">
       {/* Structural Elements */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(139,92,246,0.15),transparent_70%)]" />
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
@@ -19,7 +19,7 @@ export default function Hero() {
         transition={{ duration: 1, ease: "circOut" }}
         className="relative z-10 w-full max-w-5xl mx-auto"
       >
-        <div className="flex items-center justify-center gap-3 mb-10">
+        <div className="flex items-center justify-center gap-3 mb-12">
           <div className="w-12 h-px bg-primary/30" />
           <span className="text-[10px] sm:text-xs font-mono tracking-[0.4em] uppercase text-primary font-semibold">
             Status: System.Operational
@@ -27,7 +27,7 @@ export default function Hero() {
           <div className="w-12 h-px bg-primary/30" />
         </div>
 
-        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] font-display font-black tracking-tighter mb-10 leading-[0.8] text-gradient py-2">
+        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[9rem] font-display font-black tracking-tighter mb-10 leading-[0.8] text-gradient py-2">
           SAURABH <br />
           <span className="drop-shadow-[0_0_35px_rgba(139,92,246,0.3)]">PANCHAL</span>
         </h1>

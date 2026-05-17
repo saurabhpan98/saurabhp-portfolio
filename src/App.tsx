@@ -592,8 +592,8 @@ export default function App() {
           {/* Contact Section */}
           <section id="contact" className="section-padding bg-background relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(56,189,248,0.03),transparent_40%)]" />
-            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 relative z-10">
-              <div>
+            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 relative z-10">
+              <div className="lg:col-span-5">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-8 h-px bg-primary" />
                   <span className="text-xs font-mono uppercase tracking-[0.3em] text-primary">Transmission.Node</span>
@@ -622,7 +622,7 @@ export default function App() {
                 </div>
               </div>
 
-              <motion.div {...fadeInUp} className="glass-card rounded-none p-12 bg-muted/30 border-border">
+              <motion.div {...fadeInUp} className="lg:col-span-7 glass-card rounded-none p-12 bg-muted/30 border-border">
                 <form className="space-y-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-3">
