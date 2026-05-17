@@ -110,7 +110,7 @@ export default function Hero() {
           Architecting resilient digital ecosystems with a focus on 
           <span className="text-foreground font-semibold"> High-Availability</span> 
           and 
-          <span className="text-foreground font-semibold"> Intelligent Agents</span>.
+          <span className="text-foreground font-semibold"> Distributed Systems</span>.
         </motion.p>
 
         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-6">

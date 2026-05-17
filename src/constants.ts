@@ -4,17 +4,17 @@ export const PROJECTS: Project[] = [
   {
     id: '1',
     title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with real-time inventory and AI-powered recommendations.',
+    description: 'A full-stack e-commerce solution with real-time inventory and a smart recommendation engine.',
     image: 'https://picsum.photos/seed/shop/800/600',
     tags: ['React', 'Node.js', 'MongoDB', 'Redis'],
     github: 'https://github.com/saurabhpan98',
   },
   {
     id: '2',
-    title: 'AI Portfolio Builder',
-    description: 'An automated tool to generate developer portfolios based on GitHub activity.',
-    image: 'https://picsum.photos/seed/ai/800/600',
-    tags: ['TypeScript', 'Gemini API', 'Next.js'],
+    title: 'Developer Portfolio Builder',
+    description: 'An automated tool to generate professional developer portfolios based on GitHub activity.',
+    image: 'https://picsum.photos/seed/portfolio/800/600',
+    tags: ['TypeScript', 'GitHub API', 'Next.js'],
     github: 'https://github.com/saurabhpan98',
   },
   {
@@ -54,7 +54,7 @@ export const EDUCATIONS: Education[] = [
     institution: 'Delhi Technological University (DTU)',
     degree: 'B.Tech in Computer Engineering',
     period: '2017 - 2021',
-    details: 'Graduated with first division. Specialized in Distributed Systems and AI.'
+    details: 'Graduated with first division. Specialized in Distributed Systems and Software Engineering.'
   },
   {
     institution: 'Kendriya Vidyalaya (KV)',
@@ -89,9 +89,9 @@ export const SERVICES: Service[] = [
     icon: 'Code2'
   },
   {
-    title: 'AI Integration',
-    description: 'Embedding intelligent features into existing applications using LLMs.',
-    icon: 'Brain'
+    title: 'System Integration',
+    description: 'Embedding advanced features and automated workflows into existing applications.',
+    icon: 'Zap'
   },
   {
     title: 'UI/UX Design',
@@ -104,7 +104,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: '1',
     title: 'The Future of Web Development',
-    excerpt: 'Exploring how AI and edge computing are changing the way we build for the web.',
+    excerpt: 'Exploring how edge computing and distributed systems are changing the way we build for the web.',
     date: 'May 10, 2026',
     readTime: '5 min read'
   },
@@ -145,7 +145,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     name: 'Michael K.',
     role: 'Tech Lead @ Prisma Solutions',
-    content: 'Exceptional capability in integrating AI into production environments. A true asset to any high-stakes project.',
+    content: 'Exceptional capability in integrating complex technologies into production environments. A true asset to any high-stakes project.',
     avatar: 'https://i.pravatar.cc/150?u=michael'
   },
   {

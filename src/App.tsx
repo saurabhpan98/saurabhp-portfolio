@@ -70,7 +70,7 @@ export default function App() {
     <div className="min-h-screen bg-background text-foreground selection:bg-primary selection:text-primary-foreground">
         <Helmet>
           <title>Saurabh Panchal | Full Stack Engineer</title>
-          <meta name="description" content="Portfolio of Saurabh Panchal, a Full Stack Engineer specialized in building modern web applications and AI systems." />
+          <meta name="description" content="Portfolio of Saurabh Panchal, a Full Stack Engineer specialized in building modern web applications and distributed systems." />
           <meta name="keywords" content="Saurabh Panchal, Software Engineer, Portfolio, Full Stack, DTU, Computer Engineering" />
         </Helmet>
 
@@ -98,7 +98,7 @@ export default function App() {
                   </p>
                   <p>
                     With 3+ years of engineering experience, I specialize in building scalable web ecosystems 
-                    and implementing intelligent AI integrations that bridge the gap between abstract logic and human utility.
+                    and implementing intelligent systems that bridge the gap between abstract logic and human utility.
                   </p>
                 </div>
                 
@@ -158,7 +158,7 @@ export default function App() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10">
                 {[
                   { title: 'Full Stack Engineering', icon: Code2, desc: 'Architecting robust, scalable web applications with React, Node, and secure cloud infrastructures.' },
-                  { title: 'AI & Machine Learning', icon: Brain, desc: 'Integrating advanced LLM workflows and automated intelligence into product ecosystems.' },
+                  { title: 'Machine Learning & Automation', icon: Cpu, desc: 'Integrating automated workflows and data intelligence into product ecosystems.' },
                   { title: 'System Architecture', icon: Cpu, desc: 'Designing high-availability distributed systems optimized for performance and rapid deployment.' },
                 ].map((service, i) => (
                   <motion.div 
@@ -427,7 +427,7 @@ export default function App() {
                 <h2 className="text-4xl md:text-6xl font-display font-bold mb-10 tracking-tighter uppercase leading-none">TECHNICAL <br /> STACK</h2>
                 <p className="text-base text-muted-foreground font-light leading-relaxed tracking-wide mb-12 max-w-lg">
                   Specialized in the React ecosystem with a focus on high-performance architectures, 
-                  system scalability, and intelligent agentic integrations.
+                  system scalability, and modern software engineering.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   {['TypeScript', 'React', 'Node.js', 'Next.js', 'PostgreSQL', 'Docker', 'AWS', 'Redis', 'Tailwind', 'Git', 'D3.js', 'Python'].map((skill, i) => (
