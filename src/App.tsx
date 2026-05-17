@@ -81,7 +81,8 @@ export default function App() {
 
           {/* About Section */}
           <section id="about" className="section-padding relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(circle_at_80%_20%,rgba(139,92,246,0.1),transparent_50%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:44px_44px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
+            <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(circle_at_80%_20%,rgba(139,92,246,0.08),transparent_50%)]" />
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center relative z-10">
               <motion.div {...fadeInUp}>
                 <div className="flex items-center gap-3 mb-6">
@@ -140,8 +141,10 @@ export default function App() {
           </section>
 
           {/* Services Section */}
-          <section id="services" className="section-padding bg-muted/20 relative">
-            <div className="max-w-7xl mx-auto">
+          <section id="services" className="section-padding bg-muted/40 relative overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(rgba(139,92,246,0.05)_1px,transparent_1px)] bg-[size:32px_32px]" />
+            <div className="absolute -left-20 top-1/2 -translate-y-1/2 w-96 h-96 bg-primary/10 blur-[120px] rounded-full" />
+            <div className="max-w-7xl mx-auto relative z-10">
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-12">
                 <div className="max-w-2xl">
                   <div className="flex items-center gap-3 mb-6">
@@ -184,8 +187,12 @@ export default function App() {
           </section>
 
           {/* Projects Section */}
-          <section id="projects" className="section-padding bg-background relative overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(56,189,248,0.03),transparent_40%)]" />
+          <section id="projects" className="section-padding bg-slate-950 relative overflow-hidden text-white">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(56,189,248,0.1),transparent_40%)]" />
+            <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+            <div className="absolute -right-20 top-1/4 rotate-90 opacity-[0.02] select-none pointer-events-none hidden lg:block">
+              <span className="text-[20rem] font-display font-black leading-none">PROJECTS</span>
+            </div>
             <div className="max-w-7xl mx-auto mb-24 flex flex-col md:flex-row justify-between md:items-end gap-12 relative z-10">
               <div className="max-w-2xl">
                 <div className="flex items-center gap-3 mb-6">
@@ -243,7 +250,8 @@ export default function App() {
           </section>
 
           {/* GitHub Stats Section */}
-          <section id="github" className="section-padding relative">
+          <section id="github" className="section-padding bg-muted/20 relative overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(56,189,248,0.02),transparent_50%)]" />
             <div className="max-w-7xl mx-auto">
               <div className="mb-20">
                 <div className="flex items-center gap-3 mb-6">
@@ -259,9 +267,14 @@ export default function App() {
           </section>
 
           {/* Experience Section */}
-          <section id="experience" className="section-padding bg-muted/20 relative">
-            <div className="absolute left-0 top-0 w-px h-full bg-gradient-to-b from-transparent via-primary/10 to-transparent" />
-            <div className="max-w-7xl mx-auto">
+          <section id="experience" className="section-padding bg-background relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-full h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+            <motion.div 
+              animate={{ translateX: ['-100%', '100%'] }}
+              transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+              className="absolute top-0 left-0 w-40 h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-30"
+            />
+            <div className="max-w-7xl mx-auto relative z-10">
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
                 <div>
                   <div className="flex items-center gap-3 mb-6">
@@ -323,8 +336,8 @@ export default function App() {
           </section>
 
           {/* Education Section */}
-          <section id="education" className="section-padding bg-background relative overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(139,92,246,0.05),transparent_50%)]" />
+          <section id="education" className="section-padding bg-muted/10 relative overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(139,92,246,0.05),transparent_70%)]" />
             <div className="max-w-7xl mx-auto relative z-10">
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-12">
                 <div className="max-w-2xl">
@@ -371,8 +384,9 @@ export default function App() {
           </section>
 
           {/* Achievements Section */}
-          <section id="achievements" className="section-padding bg-muted/20 relative">
-            <div className="max-w-7xl mx-auto">
+          <section id="achievements" className="section-padding bg-background relative overflow-hidden">
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(139,92,246,0.02)_1.5px,transparent_1.5px),linear-gradient(90deg,rgba(139,92,246,0.02)_1.5px,transparent_1.5px)] bg-[size:60px_60px]" />
+            <div className="max-w-7xl mx-auto relative z-10">
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-12 text-left">
                 <div className="max-w-2xl">
                   <div className="flex items-center justify-start gap-3 mb-6">
@@ -469,8 +483,8 @@ export default function App() {
           </section>
 
           {/* Testimonials */}
-          <section className="section-padding bg-muted/30 relative overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(139,92,246,0.05),transparent_60%)]" />
+          <section className="section-padding bg-slate-950 relative overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(139,92,246,0.1),transparent_60%)]" />
             <div className="max-w-7xl mx-auto relative z-10">
               <div className="flex flex-col items-center text-center mb-20">
                 <div className="flex items-center gap-3 mb-6">
@@ -554,8 +568,9 @@ export default function App() {
           </section>
 
           {/* Blog Section */}
-          <section className="section-padding bg-muted/20 relative">
-            <div className="max-w-7xl mx-auto">
+          <section className="section-padding bg-muted/40 relative overflow-hidden">
+            <div className="absolute inset-0 opacity-[0.03] select-none pointer-events-none" style={{ backgroundImage: 'radial-gradient(#fff 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
+            <div className="max-w-7xl mx-auto relative z-10">
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
                 <div>
                   <div className="flex items-center gap-3 mb-6">
@@ -591,7 +606,8 @@ export default function App() {
 
           {/* Contact Section */}
           <section id="contact" className="section-padding bg-background relative overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(56,189,248,0.03),transparent_40%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(56,189,248,0.05),transparent_40%)]" />
+            <div className="absolute bottom-0 left-0 w-full h-[30%] bg-gradient-to-t from-primary/5 to-transparent" />
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 relative z-10">
               <div className="lg:col-span-5">
                 <div className="flex items-center gap-3 mb-6">
