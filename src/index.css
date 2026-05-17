@@ -113,7 +113,7 @@
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-br from-white via-primary/80 to-primary;
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-foreground via-primary/90 to-primary;
 }
 
 .section-padding {

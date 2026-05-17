@@ -95,17 +95,12 @@ export default function Hero() {
 
         <motion.h1 
           variants={itemVariants}
-          className="text-5xl sm:text-7xl md:text-8xl lg:text-[9rem] font-display font-black tracking-tighter mb-10 leading-[0.8] text-gradient py-2"
+          className="text-5xl sm:text-7xl md:text-8xl lg:text-[9rem] font-display font-black tracking-tighter mb-10 leading-[0.8] py-2"
         >
-          SAURABH <br />
-          <motion.span 
-            initial={{ opacity: 0, filter: "blur(10px)" }}
-            animate={{ opacity: 1, filter: "blur(0px)" }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="drop-shadow-[0_0_35px_rgba(139,92,246,0.3)] inline-block"
-          >
+          <span className="text-gradient block">SAURABH</span>
+          <span className="text-primary dark:text-primary-foreground drop-shadow-[0_0_35px_rgba(139,92,246,0.3)] block">
             PANCHAL
-          </motion.span>
+          </span>
         </motion.h1>
 
         <motion.p 
